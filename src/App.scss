@@ -11,6 +11,9 @@ $primaryFont: "Playfair Display", serif;
   margin-top: 3rem;
   color: #000;
   font-family: "Montserrat", sans-serif;
+  @media screen and (max-width: 425px) {
+    margin-top: 1rem;
+  }
 }
 
 .box {
@@ -123,6 +126,17 @@ $primaryFont: "Playfair Display", serif;
   display: flex;
   justify-content: space-between;
 
+  bottom: 0px;
+  margin-top: 0px;
+  position: relative;
+
+  @media screen and (max-width: 425px) {
+    display: inline-block;
+    bottom: 0px;
+    margin-top: 0px;
+    position: relative;
+    justify-content: center;
+  }
   a {
     background-color: #000;
     color: #fff;
