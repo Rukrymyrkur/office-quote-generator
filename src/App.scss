@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:ital,wght@1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,800&display=swap");
+
+$primaryBtn: rgb(255, 255, 255);
+$primaryFont: "Playfair Display", serif;
+
+* {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+.box {
+  max-width: 1000px;
+  width: 90vw;
+  display: flexbox;
+
+  .quotes-title {
+    transform: skew(2deg, 2deg);
+    padding: 5px;
+    margin-bottom: -70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    font-family: "Permanent Marker", cursive;
+    font-size: 2rem;
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+.quote-container {
+  display: grid;
+  border-radius: 10px;
+  padding: 10px;
+
+  background-color: rgb(227, 233, 233);
+  .text {
+    font-family: $primaryFont;
+    font-size: 2rem;
+    margin-left: 20px;
+    padding: 5px 10px px 10px;
+    text-indent: 3rem;
+    &:before {
+      content: '"';
+    }
+    &:after {
+      content: '"';
+    }
+  }
+
+  .author {
+    font-family: $primaryFont;
+    font-style: italic;
+    margin-top: 5px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+    &:before {
+      content: "- ";
+    }
+  }
+
+  .from {
+    font-size: 1rem;
+    font-family: $primaryFont;
+    letter-spacing: 2px;
+  }
+
+  button {
+    justify-self: center;
+    font-size: 1.2rem;
+    font-family: "Permanent Marker";
+    padding: 10px 20px 10px 20px;
+    margin-bottom: -10px;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+
+    position: relative;
+    animation: bounce 5s infinite linear;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+      color: #fff;
+    }
+
+    @keyframes bounce {
+      0% {
+        top: 0em;
+      }
+      40% {
+        top: 0em;
+      }
+      43% {
+        top: -0.7em;
+      }
+      46% {
+        top: 0em;
+      }
+      48% {
+        top: -0.4em;
+      }
+      50% {
+        top: 0em;
+      }
+      100% {
+        top: 0em;
+      }
+    }
+  }
+}
+
+.description {
+  position: absolute;
+  bottom: 10px;
+  max-width: 1000px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    background-color: #000;
+    color: #fff;
+    transform: uppercase;
+    text-decoration: none;
+    padding: 2px 5px 2px 5px;
+    margin-bottom: 10px;
+  }
+}
