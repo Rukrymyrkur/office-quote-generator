@@ -4,10 +4,10 @@ A generator app as a follow-up to my [API building project](https://github.com/R
 
 ## Table of contents
 
-[Info](#info)
-[Technologies](#technologies)
-[How to use](#how-to-use)
-[Live](#live)
+- [Info](#info)
+- [Technologies](#technologies)
+- [How to use](#how-to-use)
+- [Live](#live)
 
 ## Info
 
